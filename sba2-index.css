@@ -1,0 +1,72 @@
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-width: 900px;
+    line-height: 1.5;
+    color: #333333;
+}
+main {
+    width: 900px;
+    margin: 0 auto;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.icon {
+    font-size: 32px;
+}
+.mainClass {
+    max-width: 500px;
+    margin: 5px auto 15px;
+    padding: 16px 20px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+}
+
+
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+fieldset {
+    border: 2px solid #333;
+    border-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 2%;
+}
+
+
+.logindiv{
+    border: 2px solid #333;
+    border-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 2%;
+}
+
+
+
+
+
