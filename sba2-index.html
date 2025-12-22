@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -14,14 +17,14 @@
       rel="stylesheet"
     />
 
-
     <title>Design Co..</title>
     <link rel="stylesheet" href="sba2-index.css" />
   </head>
 
-  <header>
-
-      <nav class="navbar">        
+  <body>
+    <a class="skip-link" href="#loginSect">Skip to login</a>
+    <header>
+      <nav class="navbar"  role="navigation">
         <div class="nav-links">
           <a class="nav-link" href="sba2-index.html">Home</a>
           <a class="nav-link" href="#">About</a>
@@ -29,86 +32,105 @@
           <a class="nav-link" href="#">Sign up</a>
         </div>
       </nav>
-    <h1 class="Welcome">Accessible Design Co.. </h1>
-  </header>
+      <h1 class="Welcome">Accessible Design Co..</h1>
+    </header>
 
-  <body>
     <main class="mainClass">
-    <div class="logindiv">
-      <form>
-        <div>
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name..."
-            required
+      <section >
+        <div class="">
+          <img
+            class="hero-image"
+            src="images/hero-image.jpg"
+            alt="Food delivery drone saying 'I come with peas'."
           />
         </div>
-
-        <div>
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name..."
-            required
-          />
+        <div class="divAboutus">
+          <h2 class="">About Design Co..</h2>
+          <p class="pAboutus">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            atque sint ea totam vel cum accusamus rem repellendus veniam.
+            Voluptate fugit quidem minus laudantium, cum exercitationem nulla
+            itaque. Modi accusantium delectus neque quo provident suscipit
+            veniam consequatur a maxime laboriosam vel doloremque sequi minima,
+            sapiente dolorem, quod perferendis dolorum dolor alias! Tempora
+            itaque obcaecati fugit nesciunt numquam ex voluptatum laboriosam
+            necessitatibus ipsam sequi minima vel repudiandae temporibus illum
+            enim, sunt fugiat omnis eius! Rerum dolorum ipsa earum facilis quo
+            modi, similique repellat, provident porro laudantium praesentium
+            odio accusamus fugiat est deserunt autem aliquam maxime, rem
+            mollitia quae at doloribus cum! Voluptas quisquam molestiae
+            recusandae, amet placeat tempore obcaecati ad corporis tenetur
+            quaerat, debitis repudiandae officia? Voluptatibus reprehenderit
+            tenetur voluptates, vel repudiandae in omnis.
+          </p>
         </div>
+      </section>
 
-        <div>
+      <section id="services" class="contact-section" aria-labelledby="services-title">
+        <h2 class="" id="services-title">Services</h2>
+
+        <div class="services-container">
+          <div class="services-card-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+              necessitatibus.
+            </p>
+          </div>
+          <div class="services-card-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+              necessitatibus.
+            </p>
+          </div>
+          <div class="services-card-3">
+            <p id="lastCard">
+              Last card and the descriptionLorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+              necessitatibus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="loginSect">
+        <h2 class="">Login</h2>
+        <div  class="login-form">
+          <form  aria-describedby="lastCard">
+          <label for="Fname">First name</label>
+          <input
+            class="login-input"
+            id="Fname"
+            type="text"
+            placeholder="Your First Name"
+          />
+          <label for="Lname">Last name</label>
+          <input
+            class="login-input"
+            id="Lname"
+            type="text"
+            placeholder="Your Last Name"
+          />
           <label for="email">Email</label>
           <input
-            type="email"
+            class="login-input"
             id="email"
-            name="email"
-            placeholder="Your email..."
-            required
-          />
-        </div>
-
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-
-    <br />
-
-    <section id="testimonials">
-      <fieldset>
-        <legend>Customer Testimonials</legend>
-        <div>
-          <input
             type="text"
-            id="email"
-            name="email"
-            placeholder="Your testimony..."
+            placeholder="Esther@gmail.com"
           />
+          <button
+            class="login-submit-button"
+            type="button"
+            onclick="submitForm()"
+          >
+            Submit
+          </button>
+          </form>
         </div>
-        <div>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Your testimony..."
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Your testimony..."
-          />
-        </div>
-      </fieldset>
-    </section>
+      </section>
 
-      
+      <br />
     </main>
     <footer>
-      <p>&copy; 2025 My Website</p>
+      <p>&copy; 2025 Accessible Design Co..</p>
     </footer>
   </body>
 </html>
